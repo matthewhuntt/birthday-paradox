@@ -1,5 +1,5 @@
 # birthday-paradox
-A simple script to simulate the Birthday Paradox and demonstrate the effects of changing parameters
+A simple command line script to simulate the Birthday Paradox and demonstrate the effects of changing parameters
 
 
 ## Background
