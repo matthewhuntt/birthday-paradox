@@ -116,7 +116,7 @@ Probability of Getting as Least One Match:
  ```
 
 
-It is also interesting to manipulate the trials parameter k. In the above simulations, we use a value of 10,000, which is sufficiently large to get very close to the true result value for each value of the group size parameter. If we try the model with smaller values of k, say 10, we can see a lot more randomness in the final result.
+It is also interesting to manipulate the trials parameter k. In the above simulations, we use a value of 10,000, which is sufficiently large to get very close to the true result for each value of the group size parameter. If we try the model with smaller values of k, say 10, we can see a lot more randomness in the final result.
 
 `$ python BirthdayParadox.py 10 10 20`
 
