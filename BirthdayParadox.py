@@ -61,8 +61,8 @@ def matchFinder(people):
 def simpleOutputer(results, n, k):
 	print("\nResults: ")
 	print(str(results[2]) + " trials with matches in " + str(k) + " trials.")
-	print(str(results[0]) + " probability of at least one match with " + str(n) + " people.")
-	print("Expected number of matches per trail: " + str(results[1]) + ".")
+	print(str(results[0]) + "% probability of at least one match with " + str(n) + " people.")
+	print("Expected number of matches per trial: " + str(results[1]) + ".")
 
 
 def chartBuilder(n_lower, n_upper, k, step):
