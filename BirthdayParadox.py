@@ -59,6 +59,10 @@ def matchFinder(people):
 	return counter
 
 def simpleOutputer(results, n, k):
+	"""
+	Takes in results from a single run of k trials
+	Prints results to console
+	"""
 	print("\nResults: ")
 	print(str(results[2]) + " trials with matches in " + str(k) + " trials.")
 	print(str(results[0]) + "% probability of at least one match with " + str(n) + " people.")
@@ -66,12 +70,19 @@ def simpleOutputer(results, n, k):
 
 
 def chartBuilder(n_lower, n_upper, k, step):
-	
+	"""
+	Takes in parameters
+	Runs k trials with every value of in between n_lower and n_upper, in step size step
+	Prints charts to console
 
+	"""
+
+	#initialize lists for result values
 	expected_matches_list = []
 	probability_list = []
 	n_list = []
 
+	#run trials
 	for n in range(n_lower, n_upper, step):
 		results = trialRunner(n, k)
 		expected_matches_list.append(results[1])
@@ -96,19 +107,17 @@ def chartBuilder(n_lower, n_upper, k, step):
 		print("{:>3}|".format(n) + ('X' * int(scaled * 100)) + " " + str(unscaled))
 
 
-		
-
-
 
 def main(args):
 	k = int(args[1])
 	n = int(args[2])
 
-
+	#run single version if no upper limit is provided
 	if len(args) == 3:
 		results = trialRunner (n, k)
 		simpleOutputer(results, n, k)
 
+	#run mutliple version if upper limit is provided
 	if len(args) >= 4:
 		n_lower = n
 		n_upper = int(args[3])
@@ -119,9 +128,6 @@ def main(args):
 		chartBuilder(n_lower, n_upper, k, step)
 
 		
-
-
-
 
 if __name__ == '__main__':
     import sys
