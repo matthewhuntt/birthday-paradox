@@ -33,7 +33,7 @@ The results are provided in terms of the trials with a match, the percentage of 
 ```
 Results: 
 9929 trials with matches in 10000 trials.
-0.9929% probability of at least one match with 60 people.
+99.29% probability of at least one match with 60 people.
 Expected number of matches per trial: 9.6448.
 ```
 
